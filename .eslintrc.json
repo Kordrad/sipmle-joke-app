@@ -23,7 +23,7 @@
               },
               {
                 "sourceTag": "type:feature",
-                "onlyDependOnLibsWithTags": ["type:data-access", "type:util"]
+                "onlyDependOnLibsWithTags": ["type:data-access", "type:util", "type:domain"]
               },
               {
                 "sourceTag": "type:ui",

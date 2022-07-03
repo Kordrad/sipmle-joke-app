@@ -4,10 +4,11 @@
   "projects": {
     "web": "apps/web",
     "web-e2e": "apps/web-e2e",
-    "web-feature-jokes": "libs/web/feature-jokes",
-    "web-shared-domain-interfaces": "libs/web/shared/domain/interfaces",
-    "web-shared-shell": "libs/web/shared/shell",
-    "web-shared-ui-styles": "libs/web/shared/ui/styles",
-    "web-ui-nav": "libs/web/ui/nav"
+    "web-jokes-data-access-jokes": "libs/web/jokes/data-access-jokes",
+    "web-jokes-domain-types": "libs/web/jokes/domain-types",
+    "web-jokes-feature": "libs/web/jokes/feature",
+    "web-shell": "libs/web/shell",
+    "web-ui-nav": "libs/web/ui/nav",
+    "web-ui-styles": "libs/web/ui/styles"
   }
 }

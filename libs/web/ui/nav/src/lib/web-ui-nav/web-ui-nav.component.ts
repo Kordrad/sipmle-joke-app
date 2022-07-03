@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLinkPathInterface } from '@joke/web/shared/domain/interfaces';
+import { RouterLinkPathInterface } from '@joke/web-jokes-domain-types';
 import { RouterModule } from '@angular/router';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
