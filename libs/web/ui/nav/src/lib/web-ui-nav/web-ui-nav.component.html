@@ -1,0 +1,16 @@
+<nav class="nav">
+  <a [routerLink]="routes[0].url">
+    <img [src]="logoSrc" alt="Logo" class="nav__logo" />
+  </a>
+
+  <ul class="list">
+    <li *ngFor="let route of routes" class="list__element">
+      <a
+        [routerLink]="[route.url]"
+        routerLinkActive="active"
+        class="list__link"
+        >{{ route.label }}</a
+      >
+    </li>
+  </ul>
+</nav>
