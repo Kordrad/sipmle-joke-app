@@ -15,10 +15,14 @@ import {
   throwError,
 } from 'rxjs';
 import { Injectable } from '@angular/core';
+import { JokeCategoryInterface } from './joke-category.interface';
 import { JokeInterface } from '@joke/web-jokes-domain-types';
 
+import categoriesMock from '../mock/categories';
 import jokesMock from '../mock/jokes';
+
 // Only for demo
+localStorage.setItem('categories', JSON.stringify(categoriesMock));
 localStorage.setItem('jokes', JSON.stringify(jokesMock));
 
 const enum Methods {
@@ -35,6 +39,9 @@ export class FakeJokesInterceptorService implements HttpInterceptor {
     const { url, method } = req;
     const jokes: JokeInterface[] = JSON.parse(
       localStorage.getItem('jokes') ?? '[]',
+    );
+    const categories: JokeCategoryInterface[] = JSON.parse(
+      localStorage.getItem('categories') ?? '[]',
     );
 
     function handleRoute() {
@@ -59,9 +66,7 @@ export class FakeJokesInterceptorService implements HttpInterceptor {
       .pipe(delay(500))
       .pipe(dematerialize());
 
-    function ok<T>(body?: unknown): Observable<HttpEvent<T>> {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
+    function ok<T>(body?: T): Observable<HttpEvent<T>> {
       return of(new HttpResponse<T>({ status: 200, body }));
     }
 
@@ -72,6 +77,14 @@ export class FakeJokesInterceptorService implements HttpInterceptor {
     function idFromUrl() {
       const urlParts = url.split('/');
       return urlParts[urlParts.length - 1];
+    }
+
+    function provideCategory(joke: JokeInterface): JokeInterface {
+      return {
+        ...joke,
+        category:
+          categories.find(({ id }) => joke.category === id)?.name ?? 'Unknown',
+      };
     }
 
     function _deleteJoke(): Observable<HttpEvent<void | Error>> {
@@ -87,12 +100,15 @@ export class FakeJokesInterceptorService implements HttpInterceptor {
 
       return ok();
     }
+
     function _getRandomJoke(): Observable<HttpEvent<JokeInterface>> {
       const jokeRandom = () => jokes[Math.floor(Math.random() * jokes.length)];
-      return ok<JokeInterface>(jokeRandom());
+      return ok<JokeInterface>(provideCategory(jokeRandom()));
     }
+
     function _getJokes(): Observable<HttpEvent<JokeInterface[]>> {
-      return ok<JokeInterface[]>(jokes);
+      const jokeWithCategory = jokes.map((joke) => provideCategory(joke));
+      return ok<JokeInterface[]>(jokeWithCategory);
     }
   }
 }

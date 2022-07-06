@@ -2,6 +2,6 @@ import { GuidType } from '../types/guid.type';
 
 export interface JokeInterface {
   id: GuidType;
-  category: GuidType;
+  category: string;
   content: string;
 }

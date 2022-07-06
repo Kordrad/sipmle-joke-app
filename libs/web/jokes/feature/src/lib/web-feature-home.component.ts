@@ -19,19 +19,13 @@ import { WebJokesUiJokeViewComponent } from '@joke/web/jokes/ui/joke-view';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WebJokesFeatureComponent implements OnInit {
-  // allJokes$ = this.jokesFacade$.allJokes$;
   randomJoke$ = this.jokesFacade$.randomJoke$;
-
   constructor(private jokesFacade$: JokesFacade) {}
 
   ngOnInit(): void {
     this.jokesFacade$.getRandomJoke();
   }
-  //
-  // delete(id: GuidType): void {
-  //   this.jokesFacade$.deleteJoke(id);
-  // }
-  //
+
   getRandom(): void {
     this.jokesFacade$.getRandomJoke();
   }

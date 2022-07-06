@@ -8,5 +8,6 @@ export abstract class JokesService {
   abstract getJokes$(): Observable<JokeInterface[]>;
   abstract getRandomJoke$(): Observable<JokeInterface>;
   abstract deleteJoke$(id: GuidType): Observable<void>;
+
   // @Todo: add new method to push new joke
 }
