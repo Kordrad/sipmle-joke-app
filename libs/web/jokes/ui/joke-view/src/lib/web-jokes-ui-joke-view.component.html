@@ -1,0 +1,11 @@
+<div class="joke-view">
+  <button class="btn btn-primary btn-add">Dodaj</button>
+  <joke-web-jokes-ui-joke-card
+    *ngIf="joke"
+    [category]="joke.category"
+    [content]="joke.content"
+  ></joke-web-jokes-ui-joke-card>
+  <button class="btn btn-primary btn-next" (click)="getRandomJoke.emit()">
+    Pokaż następny
+  </button>
+</div>

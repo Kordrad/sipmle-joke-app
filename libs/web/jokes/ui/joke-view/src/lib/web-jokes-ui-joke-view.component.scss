@@ -1,0 +1,13 @@
+.joke-view {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+.btn {
+  &-add {
+    margin-right: auto;
+  }
+  &-next {
+    margin-left: auto;
+  }
+}

@@ -1,10 +1,14 @@
 // property-name--modifier
+
 $light: (
   'color--danger': #e44c4c,
   'color--primary': #ffcc15,
   'color--success': #6ac068,
+  'color--text': #000000,
+  'color--background': #ffffff,
   'font-weight--bold': 700,
   'font-weight--regular': 400,
   'space--default': 16px,
   'box-shadow--default': 0px 2px 2px rgba(0, 0, 0, 0.1),
+  'box-shadow--secondary': 0px 8px 8px rgba(0, 0, 0, 0.1),
 );

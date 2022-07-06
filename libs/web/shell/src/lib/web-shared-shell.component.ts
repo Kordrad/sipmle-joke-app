@@ -7,6 +7,7 @@ import { WebUiNavComponent } from '@joke/web/ui/nav';
 @Component({
   selector: 'joke-web-shell',
   templateUrl: 'web-shared-shell.component.html',
+  styleUrls: ['./web-shared-shell.component.scss'],
   standalone: true,
   imports: [CommonModule, RouterModule, WebUiNavComponent],
 })
