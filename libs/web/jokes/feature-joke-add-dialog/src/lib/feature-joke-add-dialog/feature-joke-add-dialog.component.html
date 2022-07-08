@@ -1,0 +1,6 @@
+<joke-web-shared-ui-joke-add-dialog
+  *ngIf="categories$ | async as categories"
+  [categories]="categories"
+  (closeModal)="dialogRef.close()"
+  (saveJoke)="saveJoke($event)"
+></joke-web-shared-ui-joke-add-dialog>

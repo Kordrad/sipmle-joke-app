@@ -1,0 +1,14 @@
+:host {
+  width: 90vw;
+}
+
+.snackbar {
+  &__title,
+  &__content {
+    margin: 0;
+  }
+
+  &__content {
+    margin-top: var(--space--default);
+  }
+}

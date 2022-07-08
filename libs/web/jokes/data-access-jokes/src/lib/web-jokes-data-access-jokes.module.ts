@@ -6,6 +6,7 @@ import { JokesEffects } from './+state/jokes.effects';
 import { JokesFacade } from './+state/jokes.facade';
 import { JokesImpService } from './services/jokes-imp.service';
 import { JokesService } from './services/jokes.service';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 import { environment } from '@env';
@@ -15,6 +16,7 @@ import { environment } from '@env';
     HttpClientModule,
     StoreModule.forFeature(fromJokes.JOKES_FEATURE_KEY, fromJokes.reducer),
     EffectsModule.forFeature([JokesEffects]),
+    MatSnackBarModule,
   ],
   providers: [
     JokesFacade,

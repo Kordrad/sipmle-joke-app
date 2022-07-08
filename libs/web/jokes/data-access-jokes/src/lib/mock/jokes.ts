@@ -1,4 +1,4 @@
-import { JokeInterface } from '@joke/web-jokes-domain-types';
+import { JokeInterface } from '@joke/web-shared-domain-types';
 
 export default [
   {

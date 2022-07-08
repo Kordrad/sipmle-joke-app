@@ -33,3 +33,8 @@ export const getRandomJoke = createSelector(
   getJokesState,
   (state: State) => state.randomJoke,
 );
+
+export const getCategories = createSelector(
+  getJokesState,
+  (state: State) => state.categories,
+);

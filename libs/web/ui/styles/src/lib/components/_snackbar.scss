@@ -1,0 +1,11 @@
+snack-bar-container.mat-snack-bar-container {
+  &.success {
+    background-color: var(--color--success);
+  }
+  &.fail {
+    background-color: var(--color--danger);
+  }
+  color: var(--font-color--on-background);
+  box-sizing: border-box;
+  padding: var(--space--default);
+}
