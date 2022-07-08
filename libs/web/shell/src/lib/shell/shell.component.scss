@@ -1,0 +1,15 @@
+$nav-height: 80px;
+
+joke-web-ui-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $nav-height;
+}
+
+.container {
+  padding: var(--space--default);
+  margin-top: $nav-height;
+  min-height: calc(100vh - $nav-height - var(--space--default) * 2);
+}

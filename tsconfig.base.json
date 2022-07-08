@@ -15,12 +15,34 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@joke/web-feature-jokes": ["libs/web/feature-jokes/src/index.ts"],
-      "@joke/web/shared/domain/interfaces": [
-        "libs/web/shared/domain/interfaces/src/index.ts"
+      "@env": ["environments/environment"],
+      "@joke/web-jokes-feature-joke-add-dialog": [
+        "libs/web/jokes/feature-joke-add-dialog/src/index.ts"
       ],
-      "@joke/web/shared/shell": ["libs/web/shared/shell/src/index.ts"],
-      "@joke/web/shared/ui/styles": ["libs/web/shared/ui/styles/src/index.ts"],
+      "@joke/web-jokes-feature-joke-page": [
+        "libs/web/jokes/feature-joke-page/src/index.ts"
+      ],
+      "@joke/web-jokes-ui-joke-add": [
+        "libs/web/jokes/ui/joke-add/src/index.ts"
+      ],
+      "@joke/web-jokes-ui-snackbar": [
+        "libs/web/jokes/ui/snackbar/src/index.ts"
+      ],
+      "@joke/web-shared-domain-types": [
+        "libs/web/shared/domain-types/src/index.ts"
+      ],
+      "@joke/web-shell": ["libs/web/shell/src/index.ts"],
+      "@joke/web-ui-styles": ["libs/web/ui/styles/src/index.ts"],
+      "@joke/web/jokes/data-access-jokes": [
+        "libs/web/jokes/data-access-jokes/src/index.ts"
+      ],
+      "@joke/web/jokes/ui/joke-card": [
+        "libs/web/jokes/ui/joke-card/src/index.ts"
+      ],
+      "@joke/web/jokes/ui/joke-view": [
+        "libs/web/jokes/ui/joke-view/src/index.ts"
+      ],
+      "@joke/web/my-jokes/feature": ["libs/web/my-jokes/feature/src/index.ts"],
       "@joke/web/ui/nav": ["libs/web/ui/nav/src/index.ts"]
     }
   },

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLinkPathInterface } from '@joke/web/shared/domain/interfaces';
+import { RouterLinkPathInterface } from '@joke/web-shared-domain-types';
 import { RouterModule } from '@angular/router';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
   selector: 'joke-web-ui-nav[logoSrc]',
   templateUrl: './web-ui-nav.component.html',
   styleUrls: ['./web-ui-nav.component.scss'],
+  // encapsulation: ViewEncapsulation.None,
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, RouterModule],
@@ -20,9 +21,9 @@ export class WebUiNavComponent {
       label: 'Żarty',
       url: '/',
     },
-    {
-      label: 'Moje żarty',
-      url: '/test',
-    },
+    // {
+    //   label: 'Moje żarty',
+    //   url: 'my-jokes',
+    // },
   ];
 }

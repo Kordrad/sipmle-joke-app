@@ -14,24 +14,45 @@
             "allow": [],
             "depConstraints": [
               {
+                "sourceTag": "scope:app",
+                "onlyDependOnLibsWithTags": ["type:shell"]
+              },
+              {
                 "sourceTag": "scope:web",
-                "onlyDependOnLibsWithTags": ["scope:web", "scope:shared"]
+                "onlyDependOnLibsWithTags": ["scope:web", "scope:jokes", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:jokes",
+                "onlyDependOnLibsWithTags": ["scope:jokes", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
               },
               {
                 "sourceTag": "type:shell",
-                "onlyDependOnLibsWithTags": ["type:feature", "type:util", "type:ui"]
+                "onlyDependOnLibsWithTags": [
+                  "type:feature",
+                  "type:util",
+                  "type:ui"
+                ]
               },
               {
                 "sourceTag": "type:feature",
-                "onlyDependOnLibsWithTags": ["type:data-access", "type:util"]
+                "onlyDependOnLibsWithTags": [
+                  "type:data-access",
+                  "type:util",
+                  "type:domain",
+                  "type:ui"
+                ]
               },
               {
                 "sourceTag": "type:ui",
-                "onlyDependOnLibsWithTags": ["type:feature", "type:domain"]
-              },
-              {
-                "sourceTag": "type:shared",
-                "onlyDependOnLibsWithTags": ["type:shared"]
+                "onlyDependOnLibsWithTags": [
+                  "type:domain",
+                  "type:ui",
+                  "type:feature"
+                ]
               }
             ]
           }
