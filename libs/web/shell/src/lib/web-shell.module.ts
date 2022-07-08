@@ -6,23 +6,29 @@ export const routes: Routes = [
   {
     path: '',
     component: ShellComponent,
-    pathMatch: 'full',
     children: [
       {
-        path: '',
+        path: 'my-jokes',
+        loadComponent: () =>
+          import('@joke/web/my-jokes/feature-my-jokes-page').then(
+            (m) => m.WebMyJokesFeatureMyJokesPageComponent,
+          ),
+      },
+      {
+        path: 'joke',
+        pathMatch: 'full',
         loadComponent: () =>
           import('@joke/web-jokes-feature-joke-page').then(
             (m) => m.WebJokesFeatureJokePageComponent,
           ),
+      },
+      {
+        path: '',
+        redirectTo: 'joke',
         pathMatch: 'full',
       },
     ],
   },
-  // {
-  //   path: 'my-jokes',
-  //   loadComponent: () =>
-  //     import('@joke/web/my-jokes/feature').then((m) => m.MyJokesComponent),
-  // },
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -5,13 +5,18 @@ import {
   Input,
   Output,
 } from '@angular/core';
+import {
+  MAT_DIALOG_DATA,
+  MatDialog,
+  MatDialogModule,
+  MatDialogRef,
+} from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { Dialog } from '@angular/cdk/dialog';
-import { FeatureJokeAddDialogComponent } from '@joke/web-jokes-feature-joke-add-dialog';
+import { FeatureJokeAddDialogComponent } from '@joke/web-shared-feature-joke-add-dialog';
 import { JokeInterface } from '@joke/web-shared-domain-types';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDialogModule } from '@angular/material/dialog';
-import { WebJokesUiJokeCardComponent } from '@joke/web/jokes/ui/joke-card';
+import { WebSharedUiJokeCardComponent } from '@joke/web-shared-ui-joke-card';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
 @Component({
@@ -19,20 +24,20 @@ import { WebJokesUiJokeCardComponent } from '@joke/web/jokes/ui/joke-card';
   standalone: true,
   templateUrl: './web-jokes-ui-joke-view.component.html',
   styleUrls: ['./web-jokes-ui-joke-view.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     CommonModule,
-    WebJokesUiJokeCardComponent,
+    WebSharedUiJokeCardComponent,
     MatButtonModule,
     MatDialogModule,
     FeatureJokeAddDialogComponent,
   ],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WebJokesUiJokeViewComponent {
   @Input() joke!: JokeInterface | null;
   @Output() getRandomJoke = new EventEmitter<void>();
 
-  constructor(public dialog: Dialog) {}
+  constructor(public dialog: MatDialog) {}
 
   openAddModal(): void {
     this.dialog.open(FeatureJokeAddDialogComponent);

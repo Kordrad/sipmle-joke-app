@@ -19,11 +19,20 @@
               },
               {
                 "sourceTag": "scope:web",
-                "onlyDependOnLibsWithTags": ["scope:web", "scope:jokes", "scope:shared"]
+                "onlyDependOnLibsWithTags": [
+                  "scope:web",
+                  "scope:jokes",
+                  "scope:my-jokes",
+                  "scope:shared"
+                ]
               },
               {
                 "sourceTag": "scope:jokes",
                 "onlyDependOnLibsWithTags": ["scope:jokes", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:my-jokes",
+                "onlyDependOnLibsWithTags": ["scope:my-jokes", "scope:shared"]
               },
               {
                 "sourceTag": "scope:shared",

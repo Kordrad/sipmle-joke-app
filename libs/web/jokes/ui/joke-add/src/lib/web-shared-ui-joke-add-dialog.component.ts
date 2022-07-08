@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+} from '@angular/core';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import {
   JokeCategoryInterface,
@@ -15,6 +21,7 @@ import { MatSelectModule } from '@angular/material/select';
   standalone: true,
   templateUrl: './web-shared-ui-joke-add-dialog.component.html',
   styleUrls: ['./web-shared-ui-joke-add-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     CommonModule,
     MatButtonModule,
