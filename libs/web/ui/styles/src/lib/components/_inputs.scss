@@ -1,0 +1,11 @@
+.form__fields .mat-form-field-appearance-legacy .mat-form-field-infix {
+  border: 1px solid rgba(109, 109, 109, 0.4);
+}
+
+.form__fields {
+  textarea.mat-input-element,
+  mat-form-field.mat-form-field-hide-placeholder mat-label,
+  mat-select .mat-select-min-line {
+    padding: var(--space--small);
+  }
+}

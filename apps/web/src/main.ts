@@ -2,6 +2,7 @@ import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { AppComponent } from './app/app.component';
 import { bootstrapApplication } from '@angular/platform-browser';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EffectsModule } from '@ngrx/effects';
 import { NxModule } from '@nrwl/angular';
 import { RouterModule } from '@angular/router';
@@ -15,25 +16,24 @@ if (environment.production) {
   enableProdMode();
 }
 
+const providers = [
+  RouterModule.forRoot(routes),
+  BrowserAnimationsModule,
+  NxModule.forRoot(),
+  EffectsModule.forRoot([]),
+  StoreRouterConnectingModule.forRoot(),
+  StoreModule.forRoot(
+    {},
+    {
+      runtimeChecks: {
+        strictActionImmutability: true,
+        strictStateImmutability: true,
+      },
+    },
+  ),
+  !environment.production ? StoreDevtoolsModule.instrument() : [],
+];
+
 bootstrapApplication(AppComponent, {
-  providers: [
-    importProvidersFrom(RouterModule.forRoot(routes)),
-    importProvidersFrom(NxModule.forRoot()),
-    importProvidersFrom(EffectsModule.forRoot([])),
-    importProvidersFrom(StoreRouterConnectingModule.forRoot()),
-    importProvidersFrom(
-      StoreModule.forRoot(
-        {},
-        {
-          runtimeChecks: {
-            strictActionImmutability: true,
-            strictStateImmutability: true,
-          },
-        },
-      ),
-    ),
-    importProvidersFrom(
-      !environment.production ? StoreDevtoolsModule.instrument() : [],
-    ),
-  ],
+  providers: [importProvidersFrom(...providers)],
 }).catch((err): void => console.error(err));

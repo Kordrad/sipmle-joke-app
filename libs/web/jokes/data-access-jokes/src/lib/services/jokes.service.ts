@@ -1,4 +1,9 @@
-import { GuidType, JokeInterface } from '@joke/web-jokes-domain-types';
+import {
+  GuidType,
+  JokeCategoryInterface,
+  JokeFormInterface,
+  JokeInterface,
+} from '@joke/web-shared-domain-types';
 import { Observable } from 'rxjs';
 
 export abstract class JokesService {
@@ -6,8 +11,8 @@ export abstract class JokesService {
   abstract readonly endpoints: Record<string, unknown>;
 
   abstract getJokes$(): Observable<JokeInterface[]>;
+  abstract addJoke$(joke: JokeFormInterface): Observable<void>;
   abstract getRandomJoke$(): Observable<JokeInterface>;
   abstract deleteJoke$(id: GuidType): Observable<void>;
-
-  // @Todo: add new method to push new joke
+  abstract getCategories$(): Observable<JokeCategoryInterface[]>;
 }

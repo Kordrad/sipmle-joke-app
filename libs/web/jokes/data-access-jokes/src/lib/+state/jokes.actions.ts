@@ -1,4 +1,9 @@
-import { GuidType, JokeInterface } from '@joke/web-jokes-domain-types';
+import {
+  GuidType,
+  JokeCategoryInterface,
+  JokeFormInterface,
+  JokeInterface,
+} from '@joke/web-shared-domain-types';
 import { createAction, props } from '@ngrx/store';
 
 // Jokes
@@ -9,6 +14,17 @@ export const loadJokesSuccess = createAction(
 );
 export const loadJokesFailure = createAction(
   '[Jokes/API] Load Jokes Failure',
+  props<{ error: string }>(),
+);
+
+// Add Joke
+export const addJoke = createAction(
+  '[Jokes/API] Add Joke',
+  props<{ joke: JokeFormInterface }>(),
+);
+export const addJokeSuccess = createAction('[Jokes/API] Add Joke Success');
+export const addJokeFailure = createAction(
+  '[Jokes/API] Add Joke Failure',
   props<{ error: string }>(),
 );
 
@@ -33,5 +49,16 @@ export const deleteJokeSuccess = createAction(
 );
 export const deleteJokeFailure = createAction(
   '[Jokes/API] Delete Random Joke Failure',
+  props<{ error: string }>(),
+);
+
+// Get Categories
+export const getCategories = createAction('[Jokes Page] Get Categories');
+export const loadCategoriesSuccess = createAction(
+  '[Jokes/API] Load Categories Success',
+  props<{ categories: JokeCategoryInterface[] }>(),
+);
+export const loadCategoriesFailure = createAction(
+  '[Jokes/API] Load Categories Failure',
   props<{ error: string }>(),
 );

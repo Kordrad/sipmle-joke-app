@@ -1,10 +1,9 @@
 @use 'lib/defaults';
-@use 'lib/theming/theming';
+@use 'lib/theming';
 @use 'lib/mixins';
 @use 'lib/fonts';
 @use 'lib/components';
 
-// For theming
 body {
   @include mixins.setVariablesFromMap(theming.$light);
   font-family: 'Open Sans', sans-serif;

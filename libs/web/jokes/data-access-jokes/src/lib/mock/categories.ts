@@ -1,4 +1,4 @@
-import { JokeCategoryInterface } from '../_helpers/joke-category.interface';
+import { JokeCategoryInterface } from '@joke/web-shared-domain-types';
 
 export default [
   {

@@ -1,0 +1,32 @@
+<h2>Dodawanie żartu</h2>
+<div>
+  <form [formGroup]="form" class="form">
+    <div class="form__fields">
+      <mat-form-field>
+        <mat-label>Wybierz kategorię</mat-label>
+        <mat-select formControlName="category">
+          <mat-option *ngFor="let category of categories" [value]="category.id">
+            {{ category.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Wprowadź treść żartu</mat-label>
+        <textarea
+          matInput
+          formControlName="content"
+          class="form__content"
+        ></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="modal_footer">
+      <button mat-button color="primary" (click)="closeModal.emit()">
+        Anuluj
+      </button>
+      <button mat-raised-button color="primary" type="submit" (click)="save()">
+        Dodaj
+      </button>
+    </div>
+  </form>
+</div>
