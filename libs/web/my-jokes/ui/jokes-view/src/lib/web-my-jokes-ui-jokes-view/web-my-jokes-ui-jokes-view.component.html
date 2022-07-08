@@ -7,7 +7,21 @@
   >
     Dodaj
   </button>
-  <small
-    ><code style="white-space: pre"> {{ jokes | json }}</code></small
+  <joke-web-jokes-ui-joke-card
+    *ngFor="let joke of jokes"
+    [category]="joke.category"
+    [content]="joke.content"
   >
+    <div class="card__action">
+      <button
+        mat-raised-button
+        class="card__btn-delete"
+        color="warn"
+        (click)="deleteJoke(joke.id)"
+        [disabled]="deleteJokeLoading"
+      >
+        Usuń
+      </button>
+    </div>
+  </joke-web-jokes-ui-joke-card>
 </div>

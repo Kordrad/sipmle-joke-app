@@ -9,16 +9,17 @@ import {
 export const JOKES_FEATURE_KEY = 'jokes';
 
 export interface State {
-  jokes: JokeInterface[];
-  jokesLoading: boolean;
-  jokesError?: string | null;
-  randomJoke: JokeInterface | null;
-  randomJokeLoading: boolean;
-  randomJokeError?: string | null;
-  deleteJokeError?: string | null;
   categories: JokeCategoryInterface[];
-  categoriesLoading: boolean;
   categoriesError?: string | null;
+  categoriesLoading: boolean;
+  deleteJokeError?: string | null;
+  deleteJokeLoading: boolean;
+  jokes: JokeInterface[];
+  jokesError?: string | null;
+  jokesLoading: boolean;
+  randomJoke: JokeInterface | null;
+  randomJokeError?: string | null;
+  randomJokeLoading: boolean;
 }
 
 export interface JokesPartialState {
@@ -27,12 +28,13 @@ export interface JokesPartialState {
 
 export const initialState: State = {
   // set initial required properties
+  categories: [],
+  categoriesLoading: false,
+  deleteJokeLoading: false,
   jokes: [],
   jokesLoading: false,
   randomJoke: null,
   randomJokeLoading: false,
-  categories: [],
-  categoriesLoading: false,
 };
 
 const jokesReducer = createReducer(
@@ -74,9 +76,15 @@ const jokesReducer = createReducer(
   on(JokesActions.deleteJoke, (state) => ({
     ...state,
     deleteJokeError: null,
+    deleteJokeLoading: true,
+  })),
+  on(JokesActions.deleteJokeSuccess, (state) => ({
+    ...state,
+    deleteJokeLoading: false,
   })),
   on(JokesActions.deleteJokeFailure, (state, { error }) => ({
     ...state,
+    deleteJokeLoading: false,
     deleteJokeError: error,
   })),
 

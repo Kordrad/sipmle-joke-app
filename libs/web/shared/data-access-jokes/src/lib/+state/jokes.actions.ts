@@ -20,9 +20,12 @@ export const loadJokesFailure = createAction(
 // Add Joke
 export const addJoke = createAction(
   '[Jokes/API] Add Joke',
-  props<{ joke: JokeFormInterface }>(),
+  props<{ joke: JokeFormInterface; getNewJokes?: boolean }>(),
 );
-export const addJokeSuccess = createAction('[Jokes/API] Add Joke Success');
+export const addJokeSuccess = createAction(
+  '[Jokes/API] Add Joke Success',
+  props<{ getNewJokes?: boolean }>(),
+);
 export const addJokeFailure = createAction(
   '[Jokes/API] Add Joke Failure',
   props<{ error: string }>(),

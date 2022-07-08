@@ -31,6 +31,9 @@
       "@joke/web-shared-feature-joke-add-dialog": [
         "libs/web/shared/feature-joke-add-dialog/src/index.ts"
       ],
+      "@joke/web-shared-ui-joke-card": [
+        "libs/web/shared/ui/joke-card/src/index.ts"
+      ],
       "@joke/web-shared-ui-snackbar": [
         "libs/web/shared/ui/snackbar/src/index.ts"
       ],
@@ -52,8 +55,7 @@
       "@joke/web/shared/ui/joke-page-view-base": [
         "libs/web/shared/ui/joke-page-view-base/src/index.ts"
       ],
-      "@joke/web/ui/nav": ["libs/web/ui/nav/src/index.ts"],
-      "@joke/web-shared-ui-joke-card": ["libs/web/shared/ui/joke-card/src/index.ts"]
+      "@joke/web/ui/nav": ["libs/web/ui/nav/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

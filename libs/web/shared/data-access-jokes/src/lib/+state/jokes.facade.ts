@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import * as JokesActions from './jokes.actions';
 import * as JokesSelectors from './jokes.selectors';
 import { GuidType, JokeFormInterface } from '@joke/web-shared-domain-types';
+import { getDeleteJokeLoading } from './jokes.selectors';
 
 @Injectable()
 export class JokesFacade {
@@ -11,10 +12,13 @@ export class JokesFacade {
    * Combine pieces of state using createSelector,
    * and expose them as observables through the facade.
    */
-  loaded$ = this.store.pipe(select(JokesSelectors.getJokesLoaded));
   allJokes$ = this.store.pipe(select(JokesSelectors.getAllJokes));
-  randomJoke$ = this.store.pipe(select(JokesSelectors.getRandomJoke));
   categories$ = this.store.pipe(select(JokesSelectors.getCategories));
+  deleteJokeLoading$ = this.store.pipe(
+    select(JokesSelectors.getDeleteJokeLoading),
+  );
+  loaded$ = this.store.pipe(select(JokesSelectors.getJokesLoaded));
+  randomJoke$ = this.store.pipe(select(JokesSelectors.getRandomJoke));
 
   constructor(private readonly store: Store) {}
 
@@ -22,8 +26,8 @@ export class JokesFacade {
    * Use the initialization action to perform one
    * or more tasks in your Effects.
    */
-  addJoke(joke: JokeFormInterface) {
-    this.store.dispatch(JokesActions.addJoke({ joke }));
+  addJoke(joke: JokeFormInterface, getNewJokes?: boolean) {
+    this.store.dispatch(JokesActions.addJoke({ joke, getNewJokes }));
   }
 
   getJokes() {

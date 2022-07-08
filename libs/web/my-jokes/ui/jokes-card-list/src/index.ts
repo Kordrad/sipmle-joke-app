@@ -1,1 +1,1 @@
-export * from './lib/web-my-jokes-ui-jokes-card-list.module';
+export * from './lib/web-my-jokes-ui-jokes-card-list/web-my-jokes-ui-jokes-card-list.component';

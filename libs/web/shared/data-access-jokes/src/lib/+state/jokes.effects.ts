@@ -37,7 +37,9 @@ export class JokesEffects {
               verticalPosition: 'top',
               panelClass: 'success',
             });
-            return JokesActions.addJokeSuccess();
+            return JokesActions.addJokeSuccess({
+              getNewJokes: payload.getNewJokes,
+            });
           }),
           catchError(async (error) => {
             this.snackBar.openFromComponent(SnackbarComponent, {
@@ -54,6 +56,13 @@ export class JokesEffects {
           }),
         ),
       ),
+    ),
+  );
+
+  addJokeSuccess$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(JokesActions.addJokeSuccess),
+      switchMap((a) => (a.getNewJokes ? [JokesActions.getJokes()] : [])),
     ),
   );
 
@@ -87,7 +96,7 @@ export class JokesEffects {
     ),
   );
 
-  deleteRandomJokeSuccess$ = createEffect(() =>
+  deleteJokeSuccess$ = createEffect(() =>
     this.actions$.pipe(
       ofType(JokesActions.deleteJokeSuccess),
       switchMap(() => [JokesActions.getJokes()]),

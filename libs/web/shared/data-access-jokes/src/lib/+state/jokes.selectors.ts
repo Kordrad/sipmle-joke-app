@@ -38,3 +38,8 @@ export const getCategories = createSelector(
   getJokesState,
   (state: State) => state.categories,
 );
+
+export const getDeleteJokeLoading = createSelector(
+  getJokesState,
+  (state: State) => state.deleteJokeLoading,
+);

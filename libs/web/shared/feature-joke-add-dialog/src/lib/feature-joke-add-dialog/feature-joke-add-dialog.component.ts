@@ -1,9 +1,14 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Inject,
+  OnInit,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DialogRef } from '@angular/cdk/dialog';
-import { FeatureJokeAddDialogData } from './feature-joke-add-dialog-data.interface';
 import { JokeFormInterface } from '@joke/web-shared-domain-types';
 import { JokesFacade } from '@joke/web-shared-data-access-jokes';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { WebJokesUiJokeAddComponent } from '@joke/web-jokes-ui-joke-add';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
@@ -19,7 +24,8 @@ export class FeatureJokeAddDialogComponent implements OnInit {
   categories$ = this.jokesFacade.categories$;
 
   constructor(
-    public dialogRef: DialogRef<FeatureJokeAddDialogData>,
+    @Inject(MAT_DIALOG_DATA) public data: { getNewJokesAfterAddJoke: boolean },
+    public dialogRef: DialogRef<FeatureJokeAddDialogComponent>,
     private jokesFacade: JokesFacade,
   ) {}
 
@@ -28,6 +34,6 @@ export class FeatureJokeAddDialogComponent implements OnInit {
   }
 
   saveJoke(joke: JokeFormInterface): void {
-    this.jokesFacade.addJoke(joke);
+    this.jokesFacade.addJoke(joke, this.data.getNewJokesAfterAddJoke);
   }
 }

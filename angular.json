@@ -14,7 +14,6 @@
     "web-shared-domain-types": "libs/web/shared/domain-types",
     "web-shared-feature-joke-add-dialog": "libs/web/shared/feature-joke-add-dialog",
     "web-shared-ui-joke-card": "libs/web/shared/ui/joke-card",
-    "web-shared-ui-joke-page-view-base": "libs/web/shared/ui/joke-page-view-base",
     "web-shared-ui-snackbar": "libs/web/shared/ui/snackbar",
     "web-shell": "libs/web/shell",
     "web-ui-nav": "libs/web/ui/nav",
