@@ -6,7 +6,6 @@ export const routes: Routes = [
   {
     path: '',
     component: ShellComponent,
-    pathMatch: 'full',
     children: [
       {
         path: 'my-jokes',
@@ -16,11 +15,16 @@ export const routes: Routes = [
           ),
       },
       {
-        path: '',
+        path: 'joke',
+        pathMatch: 'full',
         loadComponent: () =>
           import('@joke/web-jokes-feature-joke-page').then(
             (m) => m.WebJokesFeatureJokePageComponent,
           ),
+      },
+      {
+        path: '',
+        redirectTo: 'joke',
         pathMatch: 'full',
       },
     ],

@@ -1,0 +1,13 @@
+<div class="joke-view">
+  <button
+    mat-raised-button
+    color="primary"
+    class="btn-add"
+    (click)="openAddModal()"
+  >
+    Dodaj
+  </button>
+  <small
+    ><code style="white-space: pre"> {{ jokes | json }}</code></small
+  >
+</div>

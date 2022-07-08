@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/web/my-jokes/ui/jokes-view/src",
+  "prefix": "joke",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/web/my-jokes/ui/jokes-view"],
+      "options": {
+        "jestConfig": "libs/web/my-jokes/ui/jokes-view/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/my-jokes/ui/jokes-view/**/*.ts",
+          "libs/web/my-jokes/ui/jokes-view/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["type:ui", "scope:my-jokes"]
+}

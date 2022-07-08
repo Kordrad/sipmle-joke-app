@@ -22,5 +22,5 @@
       }
     }
   },
-  "tags": ["type:ui", "scope:jokes"]
+  "tags": ["type:ui", "scope:shared"]
 }

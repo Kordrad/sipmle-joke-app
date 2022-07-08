@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/web/shared/ui/joke-page-view-base/src",
+  "prefix": "joke",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/web/shared/ui/joke-page-view-base"],
+      "options": {
+        "jestConfig": "libs/web/shared/ui/joke-page-view-base/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/shared/ui/joke-page-view-base/**/*.ts",
+          "libs/web/shared/ui/joke-page-view-base/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["type:ui", "scope:shared"]
+}

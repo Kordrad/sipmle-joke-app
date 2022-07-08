@@ -18,7 +18,7 @@ export class WebUiNavComponent {
   readonly routes: RouterLinkPathInterface[] = [
     {
       label: 'Żarty',
-      url: '',
+      url: '/joke',
     },
     {
       label: 'Moje żarty',

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import {
   JokesFacade,
-  WebJokesDataAccessJokesModule,
-} from '@joke/web/jokes/data-access-jokes';
+  WebSharedDataAccessJokesModule,
+} from '@joke/web-shared-data-access-jokes';
 import { CommonModule } from '@angular/common';
 import { WebJokesUiJokeViewComponent } from '@joke/web/jokes/ui/joke-view';
 
@@ -13,7 +13,7 @@ import { WebJokesUiJokeViewComponent } from '@joke/web/jokes/ui/joke-view';
   templateUrl: './web-jokes-feature-joke-page.component.html',
   imports: [
     CommonModule,
-    WebJokesDataAccessJokesModule,
+    WebSharedDataAccessJokesModule,
     WebJokesUiJokeViewComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
