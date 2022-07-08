@@ -6,7 +6,7 @@
   <ul class="list">
     <li *ngFor="let route of routes" class="list__element">
       <a
-        [routerLink]="[route.url]"
+        [routerLink]="route.url"
         routerLinkActive="active"
         class="list__link"
         >{{ route.label }}</a

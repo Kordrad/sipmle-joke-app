@@ -10,7 +10,7 @@ import { WebJokesUiJokeViewComponent } from '@joke/web/jokes/ui/joke-view';
 @Component({
   selector: 'joke-web-feature',
   standalone: true,
-  templateUrl: './web-feature-home.component.html',
+  templateUrl: './web-jokes-feature-joke-page.component.html',
   imports: [
     CommonModule,
     WebJokesDataAccessJokesModule,

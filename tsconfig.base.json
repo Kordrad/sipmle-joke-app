@@ -43,6 +43,9 @@
         "libs/web/jokes/ui/joke-view/src/index.ts"
       ],
       "@joke/web/my-jokes/feature": ["libs/web/my-jokes/feature/src/index.ts"],
+      "@joke/web/my-jokes/feature-my-jokes-page": [
+        "libs/web/my-jokes/feature-my-jokes-page/src/index.ts"
+      ],
       "@joke/web/ui/nav": ["libs/web/ui/nav/src/index.ts"]
     }
   },

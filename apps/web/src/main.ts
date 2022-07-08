@@ -17,7 +17,7 @@ if (environment.production) {
 }
 
 const providers = [
-  RouterModule.forRoot(routes),
+  RouterModule.forRoot(routes, { enableTracing: true }),
   BrowserAnimationsModule,
   NxModule.forRoot(),
   EffectsModule.forRoot([]),

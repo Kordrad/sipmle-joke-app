@@ -9,6 +9,13 @@ export const routes: Routes = [
     pathMatch: 'full',
     children: [
       {
+        path: 'my-jokes',
+        loadComponent: () =>
+          import('@joke/web/my-jokes/feature-my-jokes-page').then(
+            (m) => m.WebMyJokesFeatureMyJokesPageComponent,
+          ),
+      },
+      {
         path: '',
         loadComponent: () =>
           import('@joke/web-jokes-feature-joke-page').then(
@@ -18,11 +25,6 @@ export const routes: Routes = [
       },
     ],
   },
-  // {
-  //   path: 'my-jokes',
-  //   loadComponent: () =>
-  //     import('@joke/web/my-jokes/feature').then((m) => m.MyJokesComponent),
-  // },
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -8,7 +8,6 @@ import { RouterModule } from '@angular/router';
   selector: 'joke-web-ui-nav[logoSrc]',
   templateUrl: './web-ui-nav.component.html',
   styleUrls: ['./web-ui-nav.component.scss'],
-  // encapsulation: ViewEncapsulation.None,
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, RouterModule],
@@ -19,11 +18,11 @@ export class WebUiNavComponent {
   readonly routes: RouterLinkPathInterface[] = [
     {
       label: 'Żarty',
-      url: '/',
+      url: '',
     },
-    // {
-    //   label: 'Moje żarty',
-    //   url: 'my-jokes',
-    // },
+    {
+      label: 'Moje żarty',
+      url: '/my-jokes',
+    },
   ];
 }

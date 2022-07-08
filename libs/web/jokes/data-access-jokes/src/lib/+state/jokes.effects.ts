@@ -32,7 +32,7 @@ export class JokesEffects {
                 title: 'Sukces',
                 message: 'Żart został pomyślnie dodany.',
               },
-              duration: 50000,
+              duration: 5000,
               horizontalPosition: 'right',
               verticalPosition: 'top',
               panelClass: 'success',

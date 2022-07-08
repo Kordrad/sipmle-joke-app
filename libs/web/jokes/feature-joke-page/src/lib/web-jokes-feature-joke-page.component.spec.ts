@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WebJokesFeatureJokePageComponent } from './web-feature-home.component';
+import { WebJokesFeatureJokePageComponent } from './web-jokes-feature-joke-page.component';
 
 describe('WebFeatureComponent', () => {
   let component: WebJokesFeatureJokePageComponent;

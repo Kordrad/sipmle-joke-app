@@ -1,1 +1,1 @@
-export * from './lib/web-feature-home.component';
+export * from './lib/web-jokes-feature-joke-page.component';
