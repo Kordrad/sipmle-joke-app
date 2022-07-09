@@ -78,8 +78,9 @@ const jokesReducer = createReducer(
     deleteJokeError: null,
     deleteJokeLoading: true,
   })),
-  on(JokesActions.deleteJokeSuccess, (state) => ({
+  on(JokesActions.deleteJokeSuccess, (state, { id }) => ({
     ...state,
+    jokes: state.jokes.filter((joke) => joke.id !== id),
     deleteJokeLoading: false,
   })),
   on(JokesActions.deleteJokeFailure, (state, { error }) => ({

@@ -1,15 +1,27 @@
-$nav-height: 80px;
+@use '@joke/web-ui-styles/lib/variables';
 
 joke-web-ui-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: $nav-height;
+  height: variables.$nav-height;
 }
 
 .container {
   padding: var(--space--default);
-  margin-top: $nav-height;
-  min-height: calc(100vh - $nav-height - var(--space--default) * 2);
+  margin-top: variables.$nav-height;
+  min-height: calc(
+    100vh - #{variables.$nav-height} - var(--space--default) * 2
+  );
+  max-width: map-get(variables.$grid-breakpoints, 'md');
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  router-outlet + * {
+    width: 100%;
+  }
 }
