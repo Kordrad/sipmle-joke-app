@@ -1,6 +1,6 @@
 {
   "name": "joke",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
@@ -13,7 +13,7 @@
     "start:web:demo": "nx serve web --configuration=demo",
     "// Build": "",
     "build": "nx build",
-    "build:web:demo": "nx build web --configuration=demo --baseHref=\/sipmly-joke-app\/",
+    "build:web:demo": "nx build web --configuration=demo --baseHref=\/sipmle-joke-app\/",
     "// Deploy": "scripts to deploy package",
     "predeploy-gh:web:demo": "npm run build:web:demo",
     "deploy-gh:web:demo": "gh-pages -d dist/apps/web"
