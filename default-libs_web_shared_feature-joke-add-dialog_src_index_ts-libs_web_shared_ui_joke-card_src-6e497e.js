@@ -1,116 +1,6 @@
 "use strict";
 (self["webpackChunkweb"] = self["webpackChunkweb"] || []).push([["default-libs_web_shared_feature-joke-add-dialog_src_index_ts-libs_web_shared_ui_joke-card_src-6e497e"],{
 
-/***/ 584:
-/*!*************************************************!*\
-  !*** ./libs/web/jokes/ui/joke-add/src/index.ts ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "WebJokesUiJokeAddComponent": () => (/* reexport safe */ _lib_web_shared_ui_joke_add_dialog_component__WEBPACK_IMPORTED_MODULE_0__.WebJokesUiJokeAddComponent)
-/* harmony export */ });
-/* harmony import */ var _lib_web_shared_ui_joke_add_dialog_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/web-shared-ui-joke-add-dialog.component */ 2532);
-
-
-
-/***/ }),
-
-/***/ 2532:
-/*!***************************************************************************************!*\
-  !*** ./libs/web/jokes/ui/joke-add/src/lib/web-shared-ui-joke-add-dialog.component.ts ***!
-  \***************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "WebJokesUiJokeAddComponent": () => (/* binding */ WebJokesUiJokeAddComponent)
-/* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ 2508);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 4666);
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/button */ 4522);
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/input */ 8562);
-/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/select */ 7371);
-/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/form-field */ 5074);
-/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/core */ 9121);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const _c0 = ["categories", ""];
-function WebJokesUiJokeAddComponent_mat_option_9_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-option", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const category_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", category_r1.id);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", category_r1.name, " ");
-} }
-// noinspection AngularMissingOrInvalidDeclarationInModule
-class WebJokesUiJokeAddComponent {
-    constructor(fb) {
-        this.fb = fb;
-        this.categories = [];
-        this.closeModal = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
-        this.saveJoke = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
-        this.form = this.fb.nonNullable.group({
-            category: this.categories[0]?.id,
-            content: '',
-        });
-    }
-    save() {
-        this.saveJoke.emit(this.form.value);
-        this.closeModal.emit();
-    }
-}
-WebJokesUiJokeAddComponent.ɵfac = function WebJokesUiJokeAddComponent_Factory(t) { return new (t || WebJokesUiJokeAddComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormBuilder)); };
-WebJokesUiJokeAddComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: WebJokesUiJokeAddComponent, selectors: [["joke-web-shared-ui-joke-add-dialog", "categories", ""]], inputs: { categories: "categories" }, outputs: { closeModal: "closeModal", saveJoke: "saveJoke" }, standalone: true, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵStandaloneFeature"]], attrs: _c0, decls: 19, vars: 2, consts: [[1, "form", 3, "formGroup"], [1, "form__fields"], ["formControlName", "category"], [3, "value", 4, "ngFor", "ngForOf"], ["matInput", "", "formControlName", "content", 1, "form__content"], [1, "modal_footer"], ["mat-button", "", "color", "primary", 3, "click"], ["mat-raised-button", "", "color", "primary", "type", "submit", 3, "click"], [3, "value"]], template: function WebJokesUiJokeAddComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Dodawanie \u017Cartu");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div")(3, "form", 0)(4, "div", 1)(5, "mat-form-field")(6, "mat-label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Wybierz kategori\u0119");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-select", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, WebJokesUiJokeAddComponent_mat_option_9_Template, 2, 2, "mat-option", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "mat-form-field")(11, "mat-label");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Wprowad\u017A tre\u015B\u0107 \u017Cartu");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "textarea", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 5)(15, "button", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function WebJokesUiJokeAddComponent_Template_button_click_15_listener() { return ctx.closeModal.emit(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, " Anuluj ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "button", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function WebJokesUiJokeAddComponent_Template_button_click_17_listener() { return ctx.save(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, " Dodaj ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.form);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.categories);
-    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_2__.NgForOf, _angular_material_button__WEBPACK_IMPORTED_MODULE_3__.MatButtonModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_3__.MatButton, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControlName, _angular_material_input__WEBPACK_IMPORTED_MODULE_4__.MatInputModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__.MatLabel, _angular_material_input__WEBPACK_IMPORTED_MODULE_4__.MatInput, _angular_material_select__WEBPACK_IMPORTED_MODULE_6__.MatSelectModule, _angular_material_select__WEBPACK_IMPORTED_MODULE_6__.MatSelect, _angular_material_core__WEBPACK_IMPORTED_MODULE_7__.MatOption], styles: ["[_nghost-%COMP%] {\n  display: block;\n  background: #fff;\n  border-radius: 8px;\n  min-width: 70vw;\n}\n\n.modal_footer[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.modal_footer[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]    + button[_ngcontent-%COMP%] {\n  margin-left: 16px;\n}\n\n.modal_footer[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:first-of-type {\n  margin-left: auto;\n}\n\n.form__content[_ngcontent-%COMP%] {\n  min-height: 200px;\n  resize: vertical;\n}\n\n.form__fields[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYi1zaGFyZWQtdWktam9rZS1hZGQtZGlhbG9nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFRRSxhQUFBO0FBTkY7O0FBREU7RUFDRSxpQkFBQTtBQUdKOztBQURFO0VBQ0UsaUJBQUE7QUFHSjs7QUFHRTtFQUNFLGlCQUFBO0VBQ0EsZ0JBQUE7QUFBSjs7QUFHRTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtBQURKIiwiZmlsZSI6IndlYi1zaGFyZWQtdWktam9rZS1hZGQtZGlhbG9nLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3Qge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIGJhY2tncm91bmQ6ICNmZmY7XHJcbiAgYm9yZGVyLXJhZGl1czogOHB4O1xyXG4gIG1pbi13aWR0aDogNzB2dztcclxufVxyXG5cclxuLm1vZGFsX2Zvb3RlciB7XHJcbiAgYnV0dG9uICsgYnV0dG9uIHtcclxuICAgIG1hcmdpbi1sZWZ0OiAxNnB4O1xyXG4gIH1cclxuICBidXR0b246Zmlyc3Qtb2YtdHlwZSB7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICB9XHJcblxyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuLmZvcm0ge1xyXG4gICZfX2NvbnRlbnQge1xyXG4gICAgbWluLWhlaWdodDogMjAwcHg7XHJcbiAgICByZXNpemU6IHZlcnRpY2FsO1xyXG4gIH1cclxuXHJcbiAgJl9fZmllbGRzIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIH1cclxufVxyXG4iXX0= */"], changeDetection: 0 });
-
-
-/***/ }),
-
 /***/ 8125:
 /*!********************************************************!*\
   !*** ./libs/web/shared/data-access-jokes/src/index.ts ***!
@@ -548,8 +438,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Only for demo
-localStorage.setItem('categories', JSON.stringify(_mock_categories__WEBPACK_IMPORTED_MODULE_0__["default"]));
-localStorage.setItem('jokes', JSON.stringify(_mock_jokes__WEBPACK_IMPORTED_MODULE_1__["default"]));
+if (!localStorage.getItem('jokes')) {
+    localStorage.setItem('jokes', JSON.stringify(_mock_jokes__WEBPACK_IMPORTED_MODULE_1__["default"]));
+}
+if (!localStorage.getItem('jokes')) {
+    localStorage.setItem('categories', JSON.stringify(_mock_categories__WEBPACK_IMPORTED_MODULE_0__["default"]));
+}
 class FakeJokesInterceptorService {
     intercept(req, next) {
         const { url, method, body } = req;
@@ -905,7 +799,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ 4666);
 /* harmony import */ var _joke_web_shared_data_access_jokes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @joke/web-shared-data-access-jokes */ 8125);
 /* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/dialog */ 1484);
-/* harmony import */ var _joke_web_jokes_ui_joke_add__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @joke/web-jokes-ui-joke-add */ 584);
+/* harmony import */ var _joke_web_shared_ui_joke_add__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @joke/web-shared-ui-joke-add */ 3015);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
 /* harmony import */ var _angular_cdk_dialog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/dialog */ 2529);
 
@@ -982,10 +876,120 @@ FeatureJokeAddDialogComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORT
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpipeBind1"](1, 1, ctx.categories$));
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_5__.AsyncPipe, _joke_web_jokes_ui_joke_add__WEBPACK_IMPORTED_MODULE_1__.WebJokesUiJokeAddComponent],
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_5__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_5__.AsyncPipe, _joke_web_shared_ui_joke_add__WEBPACK_IMPORTED_MODULE_1__.WebSharedUiJokeAddComponent],
   styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJmZWF0dXJlLWpva2UtYWRkLWRpYWxvZy5jb21wb25lbnQuc2NzcyJ9 */"],
   changeDetection: 0
 });
+
+/***/ }),
+
+/***/ 3015:
+/*!**************************************************!*\
+  !*** ./libs/web/shared/ui/joke-add/src/index.ts ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "WebSharedUiJokeAddComponent": () => (/* reexport safe */ _lib_web_shared_ui_joke_add_dialog_component__WEBPACK_IMPORTED_MODULE_0__.WebSharedUiJokeAddComponent)
+/* harmony export */ });
+/* harmony import */ var _lib_web_shared_ui_joke_add_dialog_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/web-shared-ui-joke-add-dialog.component */ 5481);
+
+
+
+/***/ }),
+
+/***/ 5481:
+/*!****************************************************************************************!*\
+  !*** ./libs/web/shared/ui/joke-add/src/lib/web-shared-ui-joke-add-dialog.component.ts ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "WebSharedUiJokeAddComponent": () => (/* binding */ WebSharedUiJokeAddComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 4666);
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/button */ 4522);
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/input */ 8562);
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/select */ 7371);
+/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/form-field */ 5074);
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/core */ 9121);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const _c0 = ["categories", ""];
+function WebSharedUiJokeAddComponent_mat_option_9_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-option", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const category_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("value", category_r1.id);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", category_r1.name, " ");
+} }
+// noinspection AngularMissingOrInvalidDeclarationInModule
+class WebSharedUiJokeAddComponent {
+    constructor(fb) {
+        this.fb = fb;
+        this.categories = [];
+        this.closeModal = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.saveJoke = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.form = this.fb.nonNullable.group({
+            category: this.categories[0]?.id,
+            content: '',
+        });
+    }
+    save() {
+        this.saveJoke.emit(this.form.value);
+        this.closeModal.emit();
+    }
+}
+WebSharedUiJokeAddComponent.ɵfac = function WebSharedUiJokeAddComponent_Factory(t) { return new (t || WebSharedUiJokeAddComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormBuilder)); };
+WebSharedUiJokeAddComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: WebSharedUiJokeAddComponent, selectors: [["joke-web-shared-ui-joke-add-dialog", "categories", ""]], inputs: { categories: "categories" }, outputs: { closeModal: "closeModal", saveJoke: "saveJoke" }, standalone: true, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵStandaloneFeature"]], attrs: _c0, decls: 19, vars: 2, consts: [[1, "form", 3, "formGroup"], [1, "form__fields"], ["formControlName", "category"], [3, "value", 4, "ngFor", "ngForOf"], ["matInput", "", "formControlName", "content", 1, "form__content"], [1, "modal_footer"], ["mat-button", "", "color", "primary", 3, "click"], ["mat-raised-button", "", "color", "primary", "type", "submit", 3, "click"], [3, "value"]], template: function WebSharedUiJokeAddComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Dodawanie \u017Cartu");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div")(3, "form", 0)(4, "div", 1)(5, "mat-form-field")(6, "mat-label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Wybierz kategori\u0119");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-select", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, WebSharedUiJokeAddComponent_mat_option_9_Template, 2, 2, "mat-option", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "mat-form-field")(11, "mat-label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Wprowad\u017A tre\u015B\u0107 \u017Cartu");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "textarea", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 5)(15, "button", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function WebSharedUiJokeAddComponent_Template_button_click_15_listener() { return ctx.closeModal.emit(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, " Anuluj ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "button", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function WebSharedUiJokeAddComponent_Template_button_click_17_listener() { return ctx.save(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, " Dodaj ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.form);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.categories);
+    } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_2__.NgForOf, _angular_material_button__WEBPACK_IMPORTED_MODULE_3__.MatButtonModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_3__.MatButton, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControlName, _angular_material_input__WEBPACK_IMPORTED_MODULE_4__.MatInputModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__.MatFormField, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__.MatLabel, _angular_material_input__WEBPACK_IMPORTED_MODULE_4__.MatInput, _angular_material_select__WEBPACK_IMPORTED_MODULE_6__.MatSelectModule, _angular_material_select__WEBPACK_IMPORTED_MODULE_6__.MatSelect, _angular_material_core__WEBPACK_IMPORTED_MODULE_7__.MatOption], styles: ["[_nghost-%COMP%] {\n  display: block;\n  background: #fff;\n  border-radius: 8px;\n  min-width: 70vw;\n}\n\n.modal_footer[_ngcontent-%COMP%] {\n  display: flex;\n}\n\n.modal_footer[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]    + button[_ngcontent-%COMP%] {\n  margin-left: 16px;\n}\n\n.modal_footer[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:first-of-type {\n  margin-left: auto;\n}\n\n.form__content[_ngcontent-%COMP%] {\n  min-height: 200px;\n  resize: vertical;\n}\n\n.form__fields[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYi1zaGFyZWQtdWktam9rZS1hZGQtZGlhbG9nLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0FBQ0Y7O0FBRUE7RUFRRSxhQUFBO0FBTkY7O0FBREU7RUFDRSxpQkFBQTtBQUdKOztBQURFO0VBQ0UsaUJBQUE7QUFHSjs7QUFHRTtFQUNFLGlCQUFBO0VBQ0EsZ0JBQUE7QUFBSjs7QUFHRTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtBQURKIiwiZmlsZSI6IndlYi1zaGFyZWQtdWktam9rZS1hZGQtZGlhbG9nLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3Qge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIGJhY2tncm91bmQ6ICNmZmY7XHJcbiAgYm9yZGVyLXJhZGl1czogOHB4O1xyXG4gIG1pbi13aWR0aDogNzB2dztcclxufVxyXG5cclxuLm1vZGFsX2Zvb3RlciB7XHJcbiAgYnV0dG9uICsgYnV0dG9uIHtcclxuICAgIG1hcmdpbi1sZWZ0OiAxNnB4O1xyXG4gIH1cclxuICBidXR0b246Zmlyc3Qtb2YtdHlwZSB7XHJcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcclxuICB9XHJcblxyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuLmZvcm0ge1xyXG4gICZfX2NvbnRlbnQge1xyXG4gICAgbWluLWhlaWdodDogMjAwcHg7XHJcbiAgICByZXNpemU6IHZlcnRpY2FsO1xyXG4gIH1cclxuXHJcbiAgJl9fZmllbGRzIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIH1cclxufVxyXG4iXX0= */"], changeDetection: 0 });
+
 
 /***/ }),
 

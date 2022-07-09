@@ -29,7 +29,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _joke_web_shared_data_access_jokes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @joke/web-shared-data-access-jokes */ 8125);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 4666);
-/* harmony import */ var _joke_web_jokes_ui_joke_view__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @joke/web/jokes/ui/joke-view */ 4326);
+/* harmony import */ var _joke_web_jokes_ui_joke_view__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @joke/web-jokes-ui-joke-view */ 7257);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
 
 
@@ -87,9 +87,9 @@ WebJokesFeatureJokePageComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMP
 
 /***/ }),
 
-/***/ 4326:
+/***/ 7257:
 /*!**************************************************!*\
-  !*** ./libs/web/jokes/ui/joke-view/src/index.ts ***!
+  !*** ./libs/web/jokes/ui-joke-view/src/index.ts ***!
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -97,15 +97,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "WebJokesUiJokeViewComponent": () => (/* reexport safe */ _lib_web_jokes_ui_joke_view_component__WEBPACK_IMPORTED_MODULE_0__.WebJokesUiJokeViewComponent)
 /* harmony export */ });
-/* harmony import */ var _lib_web_jokes_ui_joke_view_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/web-jokes-ui-joke-view.component */ 3338);
+/* harmony import */ var _lib_web_jokes_ui_joke_view_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/web-jokes-ui-joke-view.component */ 3871);
 
 
 
 /***/ }),
 
-/***/ 3338:
+/***/ 3871:
 /*!*********************************************************************************!*\
-  !*** ./libs/web/jokes/ui/joke-view/src/lib/web-jokes-ui-joke-view.component.ts ***!
+  !*** ./libs/web/jokes/ui-joke-view/src/lib/web-jokes-ui-joke-view.component.ts ***!
   \*********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 

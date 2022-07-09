@@ -29,7 +29,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _joke_web_shared_data_access_jokes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @joke/web-shared-data-access-jokes */ 8125);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 4666);
-/* harmony import */ var _joke_web_my_jokes_ui_jokes_view__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @joke/web/my-jokes/ui/jokes-view */ 7149);
+/* harmony import */ var _joke_web_my_jokes_ui_jokes_view__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @joke/web-my-jokes-ui-jokes-view */ 7066);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2560);
 
 
@@ -89,9 +89,9 @@ WebMyJokesFeatureMyJokesPageComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPAC
 
 /***/ }),
 
-/***/ 7149:
+/***/ 7066:
 /*!******************************************************!*\
-  !*** ./libs/web/my-jokes/ui/jokes-view/src/index.ts ***!
+  !*** ./libs/web/my-jokes/ui-jokes-view/src/index.ts ***!
   \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -99,15 +99,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "WebMyJokesUiJokesViewComponent": () => (/* reexport safe */ _lib_web_my_jokes_ui_jokes_view_web_my_jokes_ui_jokes_view_component__WEBPACK_IMPORTED_MODULE_0__.WebMyJokesUiJokesViewComponent)
 /* harmony export */ });
-/* harmony import */ var _lib_web_my_jokes_ui_jokes_view_web_my_jokes_ui_jokes_view_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/web-my-jokes-ui-jokes-view/web-my-jokes-ui-jokes-view.component */ 5202);
+/* harmony import */ var _lib_web_my_jokes_ui_jokes_view_web_my_jokes_ui_jokes_view_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/web-my-jokes-ui-jokes-view/web-my-jokes-ui-jokes-view.component */ 8983);
 
 
 
 /***/ }),
 
-/***/ 5202:
+/***/ 8983:
 /*!********************************************************************************************************************!*\
-  !*** ./libs/web/my-jokes/ui/jokes-view/src/lib/web-my-jokes-ui-jokes-view/web-my-jokes-ui-jokes-view.component.ts ***!
+  !*** ./libs/web/my-jokes/ui-jokes-view/src/lib/web-my-jokes-ui-jokes-view/web-my-jokes-ui-jokes-view.component.ts ***!
   \********************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -189,7 +189,7 @@ WebMyJokesUiJokesViewComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPO
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.jokes);
     } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_material_dialog__WEBPACK_IMPORTED_MODULE_3__.MatDialogModule,
-        _angular_material_button__WEBPACK_IMPORTED_MODULE_5__.MatButtonModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_5__.MatButton, _joke_web_shared_ui_joke_card__WEBPACK_IMPORTED_MODULE_1__.WebSharedUiJokeCardComponent], styles: [".card__action[_ngcontent-%COMP%] {\n  display: flex;\n}\n.card__btn-delete[_ngcontent-%COMP%] {\n  margin-left: auto;\n}\n.joke-view__list[_ngcontent-%COMP%] {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 14px;\n  align-items: center;\n}\n@media (min-width: 768px) {\n  .joke-view__list[_ngcontent-%COMP%]    > *[_ngcontent-%COMP%] {\n    flex: 1 0 calc(50% - 7px);\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYi1teS1qb2tlcy11aS1qb2tlcy12aWV3LmNvbXBvbmVudC5zY3NzIiwiLi5cXC4uXFwuLlxcLi5cXC4uXFwuLlxcdWlcXHN0eWxlc1xcc3JjXFxsaWJcXF9taXhpbnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHRTtFQUNFLGFBQUE7QUFGSjtBQUlFO0VBQ0UsaUJBQUE7QUFGSjtBQU1BO0VBQ0UsYUFBQTtFQUNBLGVBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7QUFIRjtBQ0dJO0VEQ0Y7SUFFSSx5QkFBQTtFQUZKO0FBQ0YiLCJmaWxlIjoid2ViLW15LWpva2VzLXVpLWpva2VzLXZpZXcuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAdXNlICdAam9rZS93ZWItdWktc3R5bGVzL2xpYi9taXhpbnMnO1xuXG4uY2FyZCB7XG4gICZfX2FjdGlvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgfVxuICAmX19idG4tZGVsZXRlIHtcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcbiAgfVxufVxuXG4uam9rZS12aWV3X19saXN0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC13cmFwOiB3cmFwO1xuICBnYXA6IDE0cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICYgPiAqIHtcbiAgICBAaW5jbHVkZSBtaXhpbnMucmVzcG9uZC10bygnbWQnKSB7XG4gICAgICBmbGV4OiAxIDAgY2FsYyg1MCUgLSA3cHgpO1xuICAgIH1cbiAgfVxufVxuIiwiQHVzZSAndmFyaWFibGVzJztcbkBtaXhpbiBzZXRWYXJpYWJsZXNGcm9tTWFwKCRtYXApIHtcbiAgQGVhY2ggJHByb3BlcnR5LCAkdmFsdWUgaW4gJG1hcCB7XG4gICAgLS0jeyRwcm9wZXJ0eX06ICN7JHZhbHVlfTtcbiAgfVxufVxuXG4vLy8gTWl4aW4gdG8gbWFuYWdlIHJlc3BvbnNpdmUgYnJlYWtwb2ludHNcbi8vLyBAYXV0aG9yIEtpdHR5IEdpcmF1ZGVsXG4vLy8gQHBhcmFtIHtTdHJpbmd9ICRicmVha3BvaW50IC0gQnJlYWtwb2ludCBuYW1lXG4vLy8gQHJlcXVpcmUgJGJyZWFrcG9pbnRzXG5AbWl4aW4gcmVzcG9uZC10bygkYnJlYWtwb2ludCkge1xuICAvLyBJZiB0aGUga2V5IGV4aXN0cyBpbiB0aGUgbWFwXG4gIEBpZiBtYXAtaGFzLWtleSh2YXJpYWJsZXMuJGdyaWQtYnJlYWtwb2ludHMsICRicmVha3BvaW50KSB7XG4gICAgLy8gUHJpbnRzIGEgbWVkaWEgcXVlcnkgYmFzZWQgb24gdGhlIHZhbHVlXG4gICAgQG1lZGlhIChtaW4td2lkdGg6IG1hcC1nZXQodmFyaWFibGVzLiRncmlkLWJyZWFrcG9pbnRzLCAkYnJlYWtwb2ludCkpIHtcbiAgICAgIEBjb250ZW50O1xuICAgIH1cbiAgfVxuXG4gIC8vIElmIHRoZSBrZXkgZG9lc24ndCBleGlzdCBpbiB0aGUgbWFwXG4gIEBlbHNlIHtcbiAgICBAd2FybiBcIlVuZm9ydHVuYXRlbHksIG5vIHZhbHVlIGNvdWxkIGJlIHJldHJpZXZlZCBmcm9tIGAjeyRicmVha3BvaW50fWAuIFwiXG4gICAgICAgICsgXCJBdmFpbGFibGUgYnJlYWtwb2ludHMgYXJlOiAje21hcC1rZXlzKHZhcmlhYmxlcy4kZ3JpZC1icmVha3BvaW50cyl9LlwiO1xuICB9XG59XG4iXX0= */"], changeDetection: 0 });
+        _angular_material_button__WEBPACK_IMPORTED_MODULE_5__.MatButtonModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_5__.MatButton, _joke_web_shared_ui_joke_card__WEBPACK_IMPORTED_MODULE_1__.WebSharedUiJokeCardComponent], styles: [".card__action[_ngcontent-%COMP%] {\n  display: flex;\n}\n.card__btn-delete[_ngcontent-%COMP%] {\n  margin-left: auto;\n}\n.joke-view__list[_ngcontent-%COMP%] {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 14px;\n  align-items: center;\n}\n@media (min-width: 768px) {\n  .joke-view__list[_ngcontent-%COMP%]    > *[_ngcontent-%COMP%] {\n    flex: 1 0 calc(50% - 7px);\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYi1teS1qb2tlcy11aS1qb2tlcy12aWV3LmNvbXBvbmVudC5zY3NzIiwiLi5cXC4uXFwuLlxcLi5cXC4uXFx1aVxcc3R5bGVzXFxzcmNcXGxpYlxcX21peGlucy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdFO0VBQ0UsYUFBQTtBQUZKO0FBSUU7RUFDRSxpQkFBQTtBQUZKO0FBTUE7RUFDRSxhQUFBO0VBQ0EsZUFBQTtFQUNBLFNBQUE7RUFDQSxtQkFBQTtBQUhGO0FDR0k7RURDRjtJQUVJLHlCQUFBO0VBRko7QUFDRiIsImZpbGUiOiJ3ZWItbXktam9rZXMtdWktam9rZXMtdmlldy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIkB1c2UgJ0Bqb2tlL3dlYi11aS1zdHlsZXMvbGliL21peGlucyc7XHJcblxyXG4uY2FyZCB7XHJcbiAgJl9fYWN0aW9uIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgfVxyXG4gICZfX2J0bi1kZWxldGUge1xyXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgfVxyXG59XHJcblxyXG4uam9rZS12aWV3X19saXN0IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtd3JhcDogd3JhcDtcclxuICBnYXA6IDE0cHg7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAmID4gKiB7XHJcbiAgICBAaW5jbHVkZSBtaXhpbnMucmVzcG9uZC10bygnbWQnKSB7XHJcbiAgICAgIGZsZXg6IDEgMCBjYWxjKDUwJSAtIDdweCk7XHJcbiAgICB9XHJcbiAgfVxyXG59XHJcbiIsIkB1c2UgJ3ZhcmlhYmxlcyc7XG5AbWl4aW4gc2V0VmFyaWFibGVzRnJvbU1hcCgkbWFwKSB7XG4gIEBlYWNoICRwcm9wZXJ0eSwgJHZhbHVlIGluICRtYXAge1xuICAgIC0tI3skcHJvcGVydHl9OiAjeyR2YWx1ZX07XG4gIH1cbn1cblxuLy8vIE1peGluIHRvIG1hbmFnZSByZXNwb25zaXZlIGJyZWFrcG9pbnRzXG4vLy8gQGF1dGhvciBLaXR0eSBHaXJhdWRlbFxuLy8vIEBwYXJhbSB7U3RyaW5nfSAkYnJlYWtwb2ludCAtIEJyZWFrcG9pbnQgbmFtZVxuLy8vIEByZXF1aXJlICRicmVha3BvaW50c1xuQG1peGluIHJlc3BvbmQtdG8oJGJyZWFrcG9pbnQpIHtcbiAgLy8gSWYgdGhlIGtleSBleGlzdHMgaW4gdGhlIG1hcFxuICBAaWYgbWFwLWhhcy1rZXkodmFyaWFibGVzLiRncmlkLWJyZWFrcG9pbnRzLCAkYnJlYWtwb2ludCkge1xuICAgIC8vIFByaW50cyBhIG1lZGlhIHF1ZXJ5IGJhc2VkIG9uIHRoZSB2YWx1ZVxuICAgIEBtZWRpYSAobWluLXdpZHRoOiBtYXAtZ2V0KHZhcmlhYmxlcy4kZ3JpZC1icmVha3BvaW50cywgJGJyZWFrcG9pbnQpKSB7XG4gICAgICBAY29udGVudDtcbiAgICB9XG4gIH1cblxuICAvLyBJZiB0aGUga2V5IGRvZXNuJ3QgZXhpc3QgaW4gdGhlIG1hcFxuICBAZWxzZSB7XG4gICAgQHdhcm4gXCJVbmZvcnR1bmF0ZWx5LCBubyB2YWx1ZSBjb3VsZCBiZSByZXRyaWV2ZWQgZnJvbSBgI3skYnJlYWtwb2ludH1gLiBcIlxuICAgICAgICArIFwiQXZhaWxhYmxlIGJyZWFrcG9pbnRzIGFyZTogI3ttYXAta2V5cyh2YXJpYWJsZXMuJGdyaWQtYnJlYWtwb2ludHMpfS5cIjtcbiAgfVxufVxuIl19 */"], changeDetection: 0 });
 
 
 /***/ })
