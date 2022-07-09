@@ -49,6 +49,7 @@ export const deleteJoke = createAction(
 );
 export const deleteJokeSuccess = createAction(
   '[Jokes/API] Delete Random Joke Success',
+  props<{ id: GuidType }>(),
 );
 export const deleteJokeFailure = createAction(
   '[Jokes/API] Delete Random Joke Failure',

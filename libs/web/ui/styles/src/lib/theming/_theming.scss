@@ -1,17 +1,19 @@
 // property-name--modifier
 
 $light: (
+  'background-color': #ffffff,
+  'border-radius--default': 10px,
+  'box-shadow--default': 0px 2px 2px rgba(0, 0, 0, 0.1),
+  'box-shadow--secondary': 0px 8px 8px rgba(0, 0, 0, 0.1),
   'color--danger': #e44c4c,
   'color--primary': #ffcc15,
   'color--success': #6ac068,
   'color--text': #000000,
   'color-gray': #6d6d6d,
-  'background-color': #ffffff,
   'font-color--on-background': #fff,
   'font-weight--bold': 700,
   'font-weight--regular': 400,
+  'space--big': 32px,
   'space--default': 16px,
   'space--small': 8px,
-  'box-shadow--default': 0px 2px 2px rgba(0, 0, 0, 0.1),
-  'box-shadow--secondary': 0px 8px 8px rgba(0, 0, 0, 0.1),
 );

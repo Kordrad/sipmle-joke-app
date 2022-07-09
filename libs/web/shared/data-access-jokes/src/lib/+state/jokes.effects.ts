@@ -32,7 +32,7 @@ export class JokesEffects {
                 title: 'Sukces',
                 message: 'Żart został pomyślnie dodany.',
               },
-              duration: 5000,
+              duration: 50000,
               horizontalPosition: 'right',
               verticalPosition: 'top',
               panelClass: 'success',
@@ -87,7 +87,7 @@ export class JokesEffects {
       ofType(JokesActions.deleteJoke),
       mergeMap((payload) =>
         this.jokesService$.deleteJoke$(payload.id).pipe(
-          map(() => JokesActions.deleteJokeSuccess()),
+          map(() => JokesActions.deleteJokeSuccess({ id: payload.id })),
           catchError(async (error) =>
             JokesActions.deleteJokeFailure({ error }),
           ),
