@@ -5,7 +5,7 @@ import {
 } from '@joke/web-shared-data-access-jokes';
 import { CommonModule } from '@angular/common';
 import { GuidType } from '@joke/web-shared-domain-types';
-import { WebMyJokesUiJokesViewComponent } from '@joke/web/my-jokes/ui/jokes-view';
+import { WebMyJokesUiJokesViewComponent } from '@joke/web-my-jokes-ui-jokes-view';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
 @Component({

@@ -4,7 +4,7 @@ import {
   WebSharedDataAccessJokesModule,
 } from '@joke/web-shared-data-access-jokes';
 import { CommonModule } from '@angular/common';
-import { WebJokesUiJokeViewComponent } from '@joke/web/jokes/ui/joke-view';
+import { WebJokesUiJokeViewComponent } from '@joke/web-jokes-ui-joke-view';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
 @Component({

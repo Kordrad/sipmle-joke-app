@@ -26,8 +26,13 @@ import categoriesMock from '../mock/categories';
 import jokesMock from '../mock/jokes';
 
 // Only for demo
-localStorage.setItem('categories', JSON.stringify(categoriesMock));
-localStorage.setItem('jokes', JSON.stringify(jokesMock));
+if (!localStorage.getItem('jokes')) {
+  localStorage.setItem('jokes', JSON.stringify(jokesMock));
+}
+
+if (!localStorage.getItem('jokes')) {
+  localStorage.setItem('categories', JSON.stringify(categoriesMock));
+}
 
 const enum Methods {
   Get = 'GET',
