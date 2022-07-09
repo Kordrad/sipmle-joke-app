@@ -9,7 +9,7 @@ import { DialogRef } from '@angular/cdk/dialog';
 import { JokeFormInterface } from '@joke/web-shared-domain-types';
 import { JokesFacade } from '@joke/web-shared-data-access-jokes';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { WebJokesUiJokeAddComponent } from '@joke/web-jokes-ui-joke-add';
+import { WebSharedUiJokeAddComponent } from '@joke/web-shared-ui-joke-add';
 
 // noinspection AngularMissingOrInvalidDeclarationInModule
 @Component({
@@ -18,7 +18,7 @@ import { WebJokesUiJokeAddComponent } from '@joke/web-jokes-ui-joke-add';
   templateUrl: './feature-joke-add-dialog.component.html',
   styleUrls: ['./feature-joke-add-dialog.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CommonModule, WebJokesUiJokeAddComponent],
+  imports: [CommonModule, WebSharedUiJokeAddComponent],
 })
 export class FeatureJokeAddDialogComponent implements OnInit {
   categories$ = this.jokesFacade.categories$;

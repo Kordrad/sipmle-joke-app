@@ -19,8 +19,11 @@
       "@joke/web-jokes-feature-joke-page": [
         "libs/web/jokes/feature-joke-page/src/index.ts"
       ],
-      "@joke/web-jokes-ui-joke-add": [
-        "libs/web/jokes/ui/joke-add/src/index.ts"
+      "@joke/web-jokes-ui-joke-view": [
+        "libs/web/jokes/ui-joke-view/src/index.ts"
+      ],
+      "@joke/web-my-jokes-ui-jokes-view": [
+        "libs/web/my-jokes/ui-jokes-view/src/index.ts"
       ],
       "@joke/web-shared-data-access-jokes": [
         "libs/web/shared/data-access-jokes/src/index.ts"
@@ -31,6 +34,9 @@
       "@joke/web-shared-feature-joke-add-dialog": [
         "libs/web/shared/feature-joke-add-dialog/src/index.ts"
       ],
+      "@joke/web-shared-ui-joke-add": [
+        "libs/web/shared/ui/joke-add/src/index.ts"
+      ],
       "@joke/web-shared-ui-joke-card": [
         "libs/web/shared/ui/joke-card/src/index.ts"
       ],
@@ -39,18 +45,12 @@
       ],
       "@joke/web-shell": ["libs/web/shell/src/index.ts"],
       "@joke/web-ui-styles": ["libs/web/ui/styles/src/index.ts"],
-      "@joke/web/jokes/ui/joke-view": [
-        "libs/web/jokes/ui/joke-view/src/index.ts"
-      ],
       "@joke/web/my-jokes/feature": ["libs/web/my-jokes/feature/src/index.ts"],
       "@joke/web/my-jokes/feature-my-jokes-page": [
         "libs/web/my-jokes/feature-my-jokes-page/src/index.ts"
       ],
       "@joke/web/my-jokes/ui/jokes-card-list": [
         "libs/web/my-jokes/ui/jokes-card-list/src/index.ts"
-      ],
-      "@joke/web/my-jokes/ui/jokes-view": [
-        "libs/web/my-jokes/ui/jokes-view/src/index.ts"
       ],
       "@joke/web/shared/ui/joke-page-view-base": [
         "libs/web/shared/ui/joke-page-view-base/src/index.ts"
