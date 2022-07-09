@@ -30,7 +30,7 @@ if (!localStorage.getItem('jokes')) {
   localStorage.setItem('jokes', JSON.stringify(jokesMock));
 }
 
-if (!localStorage.getItem('jokes')) {
+if (!localStorage.getItem('categories')) {
   localStorage.setItem('categories', JSON.stringify(categoriesMock));
 }
 
