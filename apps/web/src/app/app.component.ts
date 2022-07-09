@@ -1,10 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
+// noinspection AngularMissingOrInvalidDeclarationInModule
 @Component({
   selector: 'joke-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: `<router-outlet></router-outlet> `,
+  standalone: true,
+  imports: [CommonModule, RouterModule],
 })
-export class AppComponent {
-  title = 'web';
-}
+export class AppComponent {}

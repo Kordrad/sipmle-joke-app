@@ -1,0 +1,46 @@
+{
+  "parser": "eslint-plugin-typescript/parser",
+  "plugins": ["typescript"],
+  "rules": {
+    "prefer-object-spread": "error",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "error",
+    "no-caller": "error",
+    "no-bitwise": "error",
+    "no-constructor-return": "error",
+    "no-debugger": "error",
+    "no-new": "error",
+    "no-shadow": "off",
+    "no-unused-expressions": "off",
+    "no-var": "error",
+    "no-array-constructor": "error",
+    "prefer-const": "error",
+    "radix": ["error", "as-needed"],
+    "arrow-body-style": ["error", "as-needed"],
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    "no-unused-vars": "off",
+    "no-restricted-syntax": "warn",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["packages/*", "@rummy-ng-ui/**/public-api", "@rummy-ng-ui/**/*.module"]
+      }
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": ["debug", "info", "time", "timeEnd", "trace", "error"]
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": true
+      }
+    ]
+  }
+}

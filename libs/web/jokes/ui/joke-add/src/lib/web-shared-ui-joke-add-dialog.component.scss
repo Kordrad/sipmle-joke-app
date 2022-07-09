@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  background: #fff;
+  border-radius: 8px;
+  min-width: 70vw;
+}
+
+.modal_footer {
+  button + button {
+    margin-left: 16px;
+  }
+  button:first-of-type {
+    margin-left: auto;
+  }
+
+  display: flex;
+}
+.form {
+  &__content {
+    min-height: 200px;
+    resize: vertical;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+  }
+}

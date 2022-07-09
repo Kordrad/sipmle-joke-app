@@ -1,0 +1,22 @@
+@use '@joke/web-ui-styles/lib/mixins';
+
+.card {
+  &__action {
+    display: flex;
+  }
+  &__btn-delete {
+    margin-left: auto;
+  }
+}
+
+.joke-view__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  & > * {
+    @include mixins.respond-to('md') {
+      flex: 1 0 calc(50% - 7px);
+    }
+  }
+}

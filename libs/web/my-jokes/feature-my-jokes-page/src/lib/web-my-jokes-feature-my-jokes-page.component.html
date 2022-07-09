@@ -1,0 +1,5 @@
+<joke-web-my-jokes-ui-jokes-view
+  [jokes]="allJokes$ | async"
+  [deleteJokeLoading]="deleteJokeLoading$ | async"
+  (delete)="deleteJoke($event)"
+></joke-web-my-jokes-ui-jokes-view>
