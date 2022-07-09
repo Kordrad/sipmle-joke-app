@@ -441,7 +441,7 @@ __webpack_require__.r(__webpack_exports__);
 if (!localStorage.getItem('jokes')) {
     localStorage.setItem('jokes', JSON.stringify(_mock_jokes__WEBPACK_IMPORTED_MODULE_1__["default"]));
 }
-if (!localStorage.getItem('jokes')) {
+if (!localStorage.getItem('categories')) {
     localStorage.setItem('categories', JSON.stringify(_mock_categories__WEBPACK_IMPORTED_MODULE_0__["default"]));
 }
 class FakeJokesInterceptorService {
