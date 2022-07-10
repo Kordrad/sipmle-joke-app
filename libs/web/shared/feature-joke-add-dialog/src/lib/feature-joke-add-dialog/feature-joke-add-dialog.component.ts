@@ -34,6 +34,6 @@ export class FeatureJokeAddDialogComponent implements OnInit {
   }
 
   saveJoke(joke: JokeFormInterface): void {
-    this.jokesFacade.addJoke(joke, this.data.getNewJokesAfterAddJoke);
+    this.jokesFacade.addJoke(joke, this.data?.getNewJokesAfterAddJoke);
   }
 }
